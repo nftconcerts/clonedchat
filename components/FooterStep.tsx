@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useCloneContext } from "@/context/CloneContext";
 
 const Footer = () => {
+  const { cloneStep, setCloneStep } = useCloneContext();
   const [showIcons, setShowIcons] = useState(false);
   const share = async () => {
     const shareData = {
@@ -43,7 +44,7 @@ const Footer = () => {
           className={`text-lg md:text-2xl   rounded-full px-6 py-4 min-w-[130px] ${
             (showIcons && "w-full sm:w-auto bg-[#111]") ||
             "bg-[#222] hover:bg-[#111]"
-          }`}
+          } ${cloneStep > 0 && "opacity-20 hover:opacity-100"}`}
           onClick={() => {
             if (!showIcons) {
               setShowIcons(true);
@@ -117,7 +118,9 @@ const Footer = () => {
           }  items-center space-x-4`}
         >
           <button
-            className={`text-lg md:text-2xl bg-[#222] rounded-full px-6 py-4 min-w-[130px] hover:bg-[#111] `}
+            className={`text-lg md:text-2xl bg-[#222] rounded-full px-6 py-4 min-w-[130px] hover:bg-[#111] ${
+              cloneStep > 0 && "opacity-20 hover:opacity-100"
+            }`}
             onClick={share}
           >
             <div className="flex w-full justify-center items-center">

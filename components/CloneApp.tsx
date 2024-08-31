@@ -8,7 +8,6 @@ import CaptureImage from "./CaptureImage";
 import HeaderStep from "./HeaderStep";
 import CloneWelcome from "./CloneWelcome";
 import CloneEmotion from "./CloneEmotion";
-import ChatWithClones from "./ChatWithClones";
 
 const CloneApp = () => {
   const { name, setName, cloneStep, setCloneStep } = useCloneContext();

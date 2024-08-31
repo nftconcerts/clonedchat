@@ -23,16 +23,17 @@ const CloneWelcome = () => {
         >
           Create Your Own Clone
         </button>
-        {/* <Link href="/browse" className="w-full"> */}{" "}
-        <button
-          className="w-full text-lg md:text-xl bg-gray-800 rounded-full px-6 py-4 min-w-[130px] mt-6"
-          onClick={() => {
-            setCloneStep(-1);
-          }}
-        >
-          Chat with Clones
-        </button>
-        {/* </Link> */}
+        <Link href="/browse" className="w-full">
+          {" "}
+          <button
+            className="w-full text-lg md:text-xl bg-gray-800 rounded-full px-6 py-4 min-w-[130px] mt-6"
+            onClick={() => {
+              setCloneStep(-1);
+            }}
+          >
+            Chat with Clones
+          </button>
+        </Link>
       </div>
     </div>
   );
