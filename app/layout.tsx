@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
+import { AuthProvider } from "@/context/AuthContext";
 
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -37,7 +38,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.variable} font-sans`}>{children}</body>
+      <body className={`${ubuntu.variable} font-sans`}>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }

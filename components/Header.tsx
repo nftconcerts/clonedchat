@@ -1,16 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { UsersIcon } from "@heroicons/react/24/solid";
+import { UsersIcon, UserIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { useAuth } from "@/context/AuthContext";
 
 const Header = () => {
   const pathname = usePathname(); // Use the useRouter hook
-  const [showCreateButton, setShowCreateButton] = useState(false);
+  const { user } = useAuth();
+  const [showMyAccount, setShowMyAccount] = useState(false);
 
   useEffect(() => {
     // Update the state based on the current pathname
-    setShowCreateButton(pathname === "/browse");
+    setShowMyAccount(pathname !== "/login");
   }, [pathname]); // React to changes in pathname
 
   return (
@@ -23,17 +25,31 @@ const Header = () => {
         </Link>
       </div>
       <div className="w-1/2 flex justify-end pl-2">
-        {showCreateButton ? (
-          <Link href="/">
-            <button className="text-lg md:text-2xl bg-slate-700 rounded-full px-6 py-4 min-w-[130px] hover:bg-[#222]">
-              Create a New Clone
-            </button>
-          </Link>
-        ) : (
+        {(showMyAccount && (
+          <>
+            {user ? (
+              <Link href="/">
+                <button className="text-lg md:text-2xl border-slate-700 border-[3px] bg-slate-700 rounded-full px-6 py-4 min-w-[130px] hover:bg-[#222] hover:border-[#222]">
+                  <div className="flex w-full justify-center items-center">
+                    Your Account <UsersIcon className="w-6 h-6 ml-4" />
+                  </div>
+                </button>
+              </Link>
+            ) : (
+              <Link href="/login">
+                <button className="text-lg md:text-2xl bg-slate-700 border-slate-700 border-[3px]  rounded-full w-full md:w-fit px-6 py-4 min-w-[130px] hover:bg-[#222] hover:border-[#222]">
+                  <div className="flex w-full justify-center items-center">
+                    Log In <UserIcon className="w-6 h-6 ml-4" />
+                  </div>
+                </button>
+              </Link>
+            )}
+          </>
+        )) || (
           <Link href="/browse">
-            <button className="text-lg md:text-2xl bg-slate-700 rounded-full w-full md:w-fit px-6 py-4 min-w-[130px] hover:bg-[#222]">
+            <button className="text-lg md:text-2xl bg-slate-700 rounded-full px-6 py-4 min-w-[130px] hover:bg-[#222]">
               <div className="flex w-full justify-center items-center">
-                Browse Clones <UsersIcon className="w-6 h-6 ml-4" />
+                Chat with Clones <UsersIcon className="w-6 h-6 ml-4" />
               </div>
             </button>
           </Link>

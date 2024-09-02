@@ -95,13 +95,19 @@ const Footer = () => {
                   className="filter brightness-0 invert cursor-pointer hover:opacity-60"
                 />
               </Link>
-              <Image
-                src="/images/tiktok-logo.png"
-                width={30}
-                height={30}
-                alt="TikTok"
-                className="cursor-pointer hover:opacity-60"
-              />
+              <Link
+                href="https://www.tiktok.com/@clonedchatai/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  src="/images/tiktok-logo.png"
+                  width={30}
+                  height={30}
+                  alt="TikTok"
+                  className="cursor-pointer hover:opacity-60"
+                />
+              </Link>
               <ChevronDoubleLeftIcon
                 className="h-6 w-6 ml-4 cursor-pointer hover:opacity-60"
                 onClick={() => {
