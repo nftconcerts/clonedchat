@@ -12,27 +12,26 @@ const Page = () => {
           By using Cloned Chat, you agree to the following terms of service:
         </p>
         <p className="mb-4">
-          Sheep LLC. currently doing business as "Cloned Chat" ("COMPANY")
-          requires that all visitors ("you") to the COMPANY website
-          (https://cloned.chat) ("Site") abide by the following Terms of Use
-          ("TOU"). By accessing and using the Site you indicate your agreement
-          to these TOU. IF YOU DO NOT AGREE TO THESE TOU, PLEASE DO NOT ACCESS
-          OR USE THE SITE. COMPANY reserves the right to modify these TOU at any
-          time and in any manner, without prior notice.
+          Sheep LLC. currently doing business as &#34;Cloned Chat&#34;
+          (&#34;COMPANY&#34;) requires that all visitors (&#34;you&#34;) to the
+          COMPANY website (https://cloned.chat) (&#34;Site&#34;) abide by the
+          following Terms of Use (&#34;TOU&#34;). By accessing and using the
+          Site you indicate your agreement to these TOU. IF YOU DO NOT AGREE TO
+          THESE TOU, PLEASE DO NOT ACCESS OR USE THE SITE. COMPANY reserves the
+          right to modify these TOU at any time and in any manner, without prior
+          notice.
           <span className="font-bold">
-            {" "}
             IF YOU DO NOT AGREE TO THESE TOU, PLEASE DO NOT ACCESS OR USE THE
             SITE.
-          </span>{" "}
+          </span>
           COMPANY reserves the right to modify these TOU at any time and in any
           manner, without prior notice.
         </p>
         <h3 className="underline font-bold text-2xl mb-4">
           General Site Terms:
-        </h3>{" "}
+        </h3>
         <h4 className="font-bold text-xl mb-4">Rights</h4>
         <p className="mb-4">
-          {" "}
           COMPANY owns this Site and COMPANY, or its content providers, own
           and/or retain the rights to all content, Web pages, source code,
           materials, data, information, text, screens, services, design, layout,
@@ -71,7 +70,7 @@ const Page = () => {
           links to this Site, or the framing of this Site
         </p>
         <h4 className="font-bold text-xl mb-4">
-          Internet Risks; Disclaimer of Warranties{" "}
+          Internet Risks; Disclaimer of Warranties
         </h4>
         <p className="mb-4">
           The COMPANY maintains commercially reasonable security features in
@@ -100,7 +99,7 @@ const Page = () => {
           PERIODICALLY ADDED TO THE INFORMATION HEREIN. COMPANY AND/OR ITS
           SERVICE PROVIDERS MAY MAKE CHANGES IN THE SITE AT ANY TIME AND FROM
           TIME TO TIME.
-        </p>{" "}
+        </p>
         <h4 className="font-bold text-xl mb-4">Limitation of Liability</h4>
         <p className="mb-4">
           COMPANY SHALL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY LOSS OF
@@ -116,7 +115,7 @@ const Page = () => {
           OTHER LABOR PROBLEMS OR ANY FORCE MAJEURE EVENT. IN JURISDICTIONS THAT
           PROHIBIT THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR
           INCIDENTAL DAMAGES, COMPANY’S LIABILITY IS LIMITED TO THE GREATEST
-          EXTENT PERMITTED BY THE LAW.{" "}
+          EXTENT PERMITTED BY THE LAW.
         </p>
         <h4 className="font-bold text-xl mb-4">Termination </h4>
         <p className="mb-4">

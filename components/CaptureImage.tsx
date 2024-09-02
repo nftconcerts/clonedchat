@@ -21,7 +21,7 @@ const CaptureImage = () => {
     if (!cloneid) {
       setCloneId(name + " - " + makeid(10));
     }
-  }, []);
+  }, [cloneid, setCloneId, name]);
 
   useEffect(() => {
     navigator.mediaDevices
