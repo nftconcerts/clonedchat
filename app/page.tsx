@@ -1,6 +1,6 @@
 import { CloneProvider } from "@/context/CloneContext";
 import CloneApp from "@/components/CloneApp";
-
+//comment
 export default function Home() {
   return (
     <div className="relative w-full min-h-screen bg-[#6e199a]">
