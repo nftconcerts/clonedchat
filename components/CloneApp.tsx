@@ -8,6 +8,7 @@ import CaptureImage from "./CaptureImage";
 import HeaderStep from "./HeaderStep";
 import CloneWelcome from "./CloneWelcome";
 import CloneEmotion from "./CloneEmotion";
+import Interview from "./Interview";
 
 const CloneApp = () => {
   const { name, setName, cloneStep, setCloneStep } = useCloneContext();
@@ -52,6 +53,7 @@ const CloneApp = () => {
         <>
           <HeaderStep />
           {/* <CloneInfo /> */}
+          <Interview />
           <Footer />
         </>
       )}

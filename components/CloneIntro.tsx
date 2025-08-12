@@ -27,6 +27,7 @@ const CloneIntro = () => {
         width={300}
         height={300}
         alt="Clone Yourself"
+        className="opacity-60 hover:opacity-100 cursor-not-allowed"
       />
       <h1 className="text-3xl md:text-4xl mt-4">Step 1: Enter Your Name</h1>
       <p className="mt-4 text-xl text-center">{message}</p>
