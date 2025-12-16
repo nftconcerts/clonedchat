@@ -18,7 +18,7 @@
     "firebase-admin": "^12.4.0",
     "formidable": "^3.5.1",
     "isomorphic-ws": "^5.0.0",
-    "next": "^14.2.7",
+    "next": "14.2.35",
     "openai": "^4.29.2",
     "react": "^18",
     "react-dom": "^18",
